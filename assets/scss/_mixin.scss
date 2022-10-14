@@ -1,0 +1,26 @@
+@mixin cardContainer {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    object-fit: contain;
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@mixin heroContainer {
+  background-image: url("http://www.gioiacolli.it/wp-content/uploads/2020/11/disney-magic-kingdom-castle-illustration.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  opacity: 0.9;
+  h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}

@@ -1,1 +1,63 @@
+@import "./variables";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./mixin";
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Signika", sans-serif;
+}
+body {
+  background-color: #caf0f8;
+}
+
+nav {
+  padding-top: 5vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  position: fixed;
+  top: 0;
+  a {
+    color: white !important;
+  }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.row {
+  justify-content: center;
+}
+
+.card-container {
+  @include cardContainer;
+}
+
+.card {
+  margin: {
+    top: 5vh;
+    left: 2vh;
+  }
+  border-radius: 14px;
+  background-color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  margin-bottom: 5vh;
+}
+
+main {
+  padding-top: 10vh;
+}
+#hero-container {
+  @include heroContainer;
+}
